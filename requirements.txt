@@ -1,0 +1,13 @@
+asgiref
+certifi
+charset-normalizer
+Django
+greenlet
+idna
+pillow
+psycopg2-binary
+requests
+SQLAlchemy
+sqlparse
+typing_extensions
+urllib3
