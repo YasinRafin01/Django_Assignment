@@ -8,6 +8,7 @@ from Hotel_info.models import Property, PropertyImage, Location
 from sqlalchemy import create_engine, Column, Integer, String, Float, Text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from config import DATABASE_URL
 
 Base = declarative_base()
 
@@ -52,9 +53,7 @@ class Command(BaseCommand):
 
         '''
 
-
         # Connect to Scrapy database
-        DATABASE_URL = "postgresql://postgres:p%40stgress@localhost:5433/hotel_info1"
         engine = create_engine(DATABASE_URL)
         Session = sessionmaker(bind=engine)
         session = Session()

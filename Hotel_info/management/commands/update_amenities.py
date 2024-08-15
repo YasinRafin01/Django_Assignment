@@ -68,8 +68,8 @@ class Command(BaseCommand):
             'hotel_id': hotel.get('hotelId'),
             'hotelFacilityList':hotel.get('hotelFacilityList')
         }
-        print("--------------------------------------")
-        print(hotel_data)
+        # print("--------------------------------------")
+        # print(hotel_data)
 
         try:
             # Fetch the property by hotel_id
